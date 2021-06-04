@@ -30,3 +30,8 @@ jobs:
       run: yarn lint
     - name: Run Build
       run: yarn build
+    - name: Release
+      run: npx semantic-release
+      env:
+        GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+        NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
