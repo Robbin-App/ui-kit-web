@@ -1,9 +1,13 @@
 {
-  "name": "@robbinapp/test",
+  "name": "@robbinapp/ui-kit-web",
   "version": "0.1.6",
   "private": false,
   "main": "./build/index.js",
   "module": "./build/index.es.js",
+  "description": "Robbin Ui Kit Web",
+  "repository": "git@github.com:Robbin-App/ui-kit-web.git",
+  "author": "Jose Guerrero <jose@robbin.app>",
+  "license": "MIT",
   "scripts": {
     "test": "react-scripts test",
     "storybook": "start-storybook -p 6006 -s public",
