@@ -34,7 +34,16 @@ export interface IFormInputProps {
  */
 export const FormInput: React.FunctionComponent<
   IFormInputProps & React.InputHTMLAttributes<HTMLInputElement>
-> = ({ label, formId, error, value, onChange, disabled, ...props }) => {
+> = ({
+  label,
+  formId,
+  error,
+  value,
+  onChange,
+  disabled,
+  className,
+  ...props
+}) => {
   const inputElement = useRef<HTMLInputElement | null>(null);
   const [useMiniLabel, setUseMiniLabel] = useState<boolean>(false);
   const [isFocus, setIsFocus] = useState<boolean>(false);
@@ -61,7 +70,7 @@ export const FormInput: React.FunctionComponent<
     if (!isFocus) setUseMiniLabel(String(value).length > 0);
   }, [value]);
   return (
-    <FormGroup>
+    <FormGroup className={className}>
       <FormField {...{ error, useMiniLabel, isFocus, disabled }}>
         <label htmlFor={formId}>{label}</label>
         <input
