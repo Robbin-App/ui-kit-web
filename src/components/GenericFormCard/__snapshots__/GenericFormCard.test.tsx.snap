@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GenericFormCard renders 1`] = `
+<div
+  className="sc-bdnxRM kSbPZw"
+>
+  <h2>
+    test title
+  </h2>
+</div>
+`;
