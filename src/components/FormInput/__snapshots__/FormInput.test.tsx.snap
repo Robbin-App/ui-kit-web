@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FormInput renders 1`] = `
+<div
+  className="sc-bdnxRM bIYsmH"
+>
+  <div
+    className="sc-gtsrHT dribdY"
+  >
+    <label
+      htmlFor="test-id"
+    >
+      hello input
+    </label>
+    <input
+      id="test-id"
+      onBlur={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      placeholder=""
+    />
+  </div>
+</div>
+`;

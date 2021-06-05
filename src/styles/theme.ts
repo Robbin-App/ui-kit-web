@@ -1,5 +1,3 @@
-import { DefaultTheme } from 'styled-components';
-
 export interface IBaseRobbinTheme {
   colors: {
     primary90: string;
@@ -8,6 +6,7 @@ export interface IBaseRobbinTheme {
     secondary90: string;
     secondary100: string;
     secondary200: string;
+    error: string;
     text: {
       headingText: string;
       globalText: string;
@@ -46,6 +45,7 @@ export const baseRobbinTheme: IBaseRobbinTheme = {
     secondary90: '#5081B9',
     secondary100: '#4677AF',
     secondary200: '#426FA4',
+    error: '#A62121',
     border: {
       lightBorder: '#E7E6E6',
       darkBorder: '#D6D6D6',
