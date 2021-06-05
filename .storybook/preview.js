@@ -1,6 +1,6 @@
 import React from 'react';
 import {ThemeProvider} from "styled-components";
-import {baseRobbinTheme} from "../src";
+import {baseRobbinTheme, GlobalStyles} from "../src";
 
 
 export const parameters = {
@@ -12,10 +12,10 @@ export const parameters = {
     },
   },
 }
-
 export const decorators = [
   (Story) => (
     <ThemeProvider theme={baseRobbinTheme}>
+      <GlobalStyles/>
       <div style={{ margin: '3em' }}>
         <Story />
       </div>

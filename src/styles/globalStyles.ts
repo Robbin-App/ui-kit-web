@@ -14,6 +14,7 @@ export const globalStyles = css`
     font-family: 'Nunito', sans-serif;;
     color: ${(props) => props.theme.colors.text.globalText}
     background: ${(props) => props.theme.colors.greySurface};
+    font-size: 16px;
   }
   html,
   body {

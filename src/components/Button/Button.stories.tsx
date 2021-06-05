@@ -4,34 +4,27 @@ import { Story, Meta } from '@storybook/react';
 import { Button, IButtonProps } from './';
 
 export default {
-  title: 'Example/Button',
+  title: 'Components/Button',
   component: Button,
-  argTypes: {
-    backgroundColor: { control: 'color' },
-  },
 } as Meta;
 
 const Template: Story<IButtonProps> = (args) => <Button {...args} />;
 
 export const Primary = Template.bind({});
 Primary.args = {
-  primary: true,
-  label: 'Button',
+  color: 'primary',
+  label: 'Continuar',
 };
 
 export const Secondary = Template.bind({});
 Secondary.args = {
-  label: 'Button',
+  color: 'secondary',
+  label: 'Continuar',
 };
 
-export const Large = Template.bind({});
-Large.args = {
-  size: 'large',
-  label: 'Button',
-};
-
-export const Small = Template.bind({});
-Small.args = {
-  size: 'small',
-  label: 'Button',
+export const Outline = Template.bind({});
+Outline.args = {
+  color: 'primary',
+  buttonStyle: 'outline',
+  label: 'Continuar',
 };
