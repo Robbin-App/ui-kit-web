@@ -19,6 +19,12 @@ export interface IBaseRobbinTheme {
     white: string;
     greySurface: string;
   };
+  shadows: {
+    global: string;
+    globalHover: string;
+    focus: string;
+    active: string;
+  };
   fonts: {
     nunito: string;
     weight: {
@@ -55,6 +61,12 @@ export const baseRobbinTheme: IBaseRobbinTheme = {
       globalText: '#545454',
       disabledText: '#A1A1A1',
     },
+  },
+  shadows: {
+    global: '0px 0px 9px 2px rgba(0, 0, 0, 0.08)',
+    globalHover: '0px 0px 9px 2px rgba(0, 0, 0, 0.16)',
+    focus: '0px 0px 9px 2px rgba(21, 69, 111, 0.5)',
+    active: '0px 0px 9px 2px rgba(21, 69, 111, 0.8)',
   },
   fonts: {
     nunito: `'Nunito', sans-serif`,
