@@ -5,7 +5,7 @@ exports[`FormInput renders 1`] = `
   className="sc-bdnxRM bIYsmH"
 >
   <div
-    className="sc-gtsrHT hPbjKO"
+    className="sc-gtsrHT txfIB form-field"
   >
     <label
       htmlFor="test-id"

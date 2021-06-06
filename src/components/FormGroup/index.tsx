@@ -47,7 +47,10 @@ export const FormGroup: React.FunctionComponent<IFormGroupProps> = ({
   children,
 }) => (
   <FormGroupContainer className={className}>
-    <FormField {...{ error, miniLabel, isFocus, disabled }}>
+    <FormField
+      {...{ error, miniLabel, isFocus, disabled }}
+      className="form-field"
+    >
       <label htmlFor={formId}>{label}</label>
       {children}
     </FormField>
@@ -92,7 +95,7 @@ const FormField = styled.div<{
     top: 0;
     transition: transform 0.3s ease-out;
     bottom: ${(props) => (props.miniLabel ? 'auto' : 0)};
-    font-size: ${(props) => (props.miniLabel ? getRem(10) : getRem(16))};
+    font-size: ${(props) => (props.miniLabel ? getRem(12) : getRem(16))};
     line-height: ${(props) => (props.miniLabel ? getRem(12) : getRem(20))};
     font-weight: ${(props) =>
       props.miniLabel
@@ -102,7 +105,8 @@ const FormField = styled.div<{
     pointer-events: none;
   }
   input,
-  select {
+  select,
+  textarea {
     width: 100%;
     font-size: ${getRem(16)};
     line-height: ${getRem(20)};
@@ -127,5 +131,18 @@ const FormField = styled.div<{
   select {
     -moz-appearance: none;
     -webkit-appearance: none;
+  }
+  textarea {
+    border-bottom-right-radius: 0;
+    &::-webkit-scrollbar {
+      width: 14px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      border: 4px solid rgba(0, 0, 0, 0);
+      background-clip: padding-box;
+      border-radius: 9999px;
+      background-color: ${({ theme }) => theme.colors.border.darkBorder};
+    }
   }
 `;
