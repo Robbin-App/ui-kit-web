@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HeaderLoggedUser renders normal 1`] = `
+<div
+  className="sc-bdnxRM jKBiDN"
+>
+  <img
+    alt="lego"
+    draggable={false}
+    height="24"
+    src="https://randomuser.me/api/portraits/lego/1.jpg"
+    width="24"
+  />
+  <span
+    id="logged-user"
+  >
+    lego
+  </span>
+</div>
+`;
