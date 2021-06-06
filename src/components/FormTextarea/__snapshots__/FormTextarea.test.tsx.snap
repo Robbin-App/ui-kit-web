@@ -2,7 +2,7 @@
 
 exports[`FormTextarea renders 1`] = `
 <div
-  className="sc-bdnxRM bIYsmH sc-dlnjwi cjGnbF"
+  className="sc-bdnxRM PrveY sc-dlnjwi cjGnbF"
 >
   <div
     className="sc-gtsrHT txfIB form-field"
