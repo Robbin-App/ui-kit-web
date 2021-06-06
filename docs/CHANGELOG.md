@@ -1,3 +1,17 @@
+# [1.3.0](https://github.com/Robbin-App/ui-kit-web/compare/v1.2.0...v1.3.0) (2021-06-06)
+
+
+### Bug Fixes
+
+* 🐛 Button: make width 100% by default ([04533f7](https://github.com/Robbin-App/ui-kit-web/commit/04533f7002d4f5192d2900ed704e91412fa38afb))
+* 🐛 FormGroup: Increase margin-bottom ([225383b](https://github.com/Robbin-App/ui-kit-web/commit/225383b3235ff90393ebdfe0dba259c753a689bf))
+* 🐛 update container padding ([cf894c3](https://github.com/Robbin-App/ui-kit-web/commit/cf894c33e2ff843c33563b5010a74c21ce4a8aed))
+
+
+### Features
+
+* 🎸 Button: add support for loading indicator ([e0ade5d](https://github.com/Robbin-App/ui-kit-web/commit/e0ade5d695cef71e29522758802b35b71f45a356))
+
 # [1.2.0](https://github.com/Robbin-App/ui-kit-web/compare/v1.1.1...v1.2.0) (2021-06-06)
 
 
