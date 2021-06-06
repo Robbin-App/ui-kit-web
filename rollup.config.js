@@ -2,6 +2,7 @@ import commonjs from '@rollup/plugin-commonjs';
 import resolve from '@rollup/plugin-node-resolve';
 import peerDepsExternal from 'rollup-plugin-peer-deps-external';
 import typescript from '@rollup/plugin-typescript';
+import css from 'rollup-plugin-import-css';
 
 import packageJson from './package.json';
 
@@ -23,6 +24,7 @@ export default {
   plugins: [
     peerDepsExternal(),
     resolve(),
+    css(),
     commonjs(),
     typescript({ tsconfig: './tsconfig.json', noEmitOnError: true }),
   ],
