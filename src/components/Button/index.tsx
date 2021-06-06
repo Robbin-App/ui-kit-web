@@ -69,6 +69,7 @@ const buttonStyle = css<{ color: 'primary' | 'secondary' }>`
 
 const StyledButton = styled.button<{ color: 'primary' | 'secondary' }>`
   display: block;
+  width: 100%;
   cursor: pointer;
   border: 0;
   padding: 10px 24px;
