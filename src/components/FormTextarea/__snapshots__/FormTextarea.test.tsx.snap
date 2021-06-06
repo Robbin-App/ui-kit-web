@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FormTextarea renders 1`] = `
+<div
+  className="sc-bdnxRM bIYsmH sc-dlnjwi cjGnbF"
+>
+  <div
+    className="sc-gtsrHT txfIB form-field"
+  >
+    <label
+      htmlFor="test-id"
+    >
+      hello textarea
+    </label>
+    <textarea
+      id="test-id"
+      onBlur={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      placeholder=""
+      rows={6}
+    />
+  </div>
+</div>
+`;

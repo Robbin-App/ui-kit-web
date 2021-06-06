@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FormSelect renders 1`] = `
+<div
+  className="sc-bdnxRM bIYsmH"
+>
+  <div
+    className="sc-gtsrHT gFdAxC form-field"
+  >
+    <label
+      htmlFor="test-id"
+    >
+      select label
+    </label>
+    <select
+      data-testid="select-test-id"
+      id="test-id"
+      onBlur={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      placeholder=""
+    >
+      <option
+        disabled={true}
+        value="value"
+      >
+        label
+      </option>
+      <option
+        value="value1"
+      >
+        label1
+      </option>
+    </select>
+    <svg
+      aria-hidden={true}
+      className="MuiSvgIcon-root sc-dlnjwi fCgiXY"
+      focusable="false"
+      viewBox="0 0 24 24"
+    >
+      <path
+        d="M7 10l5 5 5-5z"
+      />
+    </svg>
+  </div>
+</div>
+`;

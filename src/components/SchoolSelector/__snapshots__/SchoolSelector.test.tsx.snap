@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SchoolSelector renders 1`] = `
+<button
+  className="sc-bdnxRM llojyM"
+>
+  <div>
+    <img
+      alt="logo alt"
+      src="logo src"
+    />
+  </div>
+  <span>
+    test name
+  </span>
+</button>
+`;

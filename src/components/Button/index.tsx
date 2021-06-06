@@ -1,19 +1,16 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
+import { getRem } from '../../helpers';
 
 export interface IButtonProps {
   /**
-   * Is this the principal call to action on the page?
+   * Color of the Button
    */
-  primary?: boolean;
+  color: 'primary' | 'secondary';
   /**
-   * What background color to use
+   * Style of the Button
    */
-  backgroundColor?: string;
-  /**
-   * How large should the button be?
-   */
-  size?: 'small' | 'medium' | 'large';
+  buttonStyle: 'solid' | 'outline';
   /**
    * Button contents
    */
@@ -25,56 +22,61 @@ export interface IButtonProps {
 }
 
 /**
- * Primary UI component for user interaction
+ * Basic Button Component
  */
-export const Button: React.FC<IButtonProps> = ({
-  primary = false,
-  size = 'medium',
-  backgroundColor,
+export const Button: React.FC<
+  IButtonProps & React.ButtonHTMLAttributes<HTMLButtonElement>
+> = ({
+  color = 'primary',
+  buttonStyle = 'solid',
   label,
+  className,
   ...props
-}) => {
-  const mode = primary
-    ? 'storybook-button--primary'
-    : 'storybook-button--secondary';
-  return (
-    <StyledButton
-      type="button"
-      className={[`storybook-button--${size}`, mode].join(' ')}
-      style={{ backgroundColor }}
-      {...props}
-    >
-      {label}
-    </StyledButton>
-  );
-};
+}) => (
+  <StyledButton
+    color={color}
+    className={[className, buttonStyle].join(' ')}
+    {...props}
+  >
+    {label}
+  </StyledButton>
+);
 
-const StyledButton = styled.button`
-  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: 700;
-  border: 0;
-  border-radius: 3em;
+const buttonStyle = css<{ color: 'primary' | 'secondary' }>`
+  color: ${({ theme }) => theme.colors.white};
+  background-color: ${({ theme, color }) => theme.colors[`${color}100`]};
+  border: 2px solid ${({ theme, color }) => theme.colors[`${color}100`]};
+  &.solid,
+  &.outline {
+    &:hover {
+      background-color: ${({ theme, color }) => theme.colors[`${color}90`]};
+      border-color: ${({ theme, color }) => theme.colors[`${color}90`]};
+    }
+    &:active {
+      background-color: ${({ theme, color }) => theme.colors[`${color}200`]};
+      border-color: ${({ theme, color }) => theme.colors[`${color}200`]};
+    }
+  }
+  &.outline {
+    color: ${({ theme, color }) => theme.colors[`${color}100`]};
+    background-color: transparent;
+    &:hover,
+    &:active {
+      color: ${({ theme }) => theme.colors.white};
+    }
+  }
+`;
+
+const StyledButton = styled.button<{ color: 'primary' | 'secondary' }>`
+  display: block;
   cursor: pointer;
-  display: inline-block;
-  line-height: 1;
-  &.storybook-button--primary {
-    color: ${(props) => props.theme.colors.white};
-    background-color: ${(props) => props.theme.colors.primary100};
-  }
-  &.storybook-button--secondary {
-    color: ${(props) => props.theme.colors.white};
-    background-color: ${(props) => props.theme.colors.secondary100};
-  }
-  &.storybook-button--small {
-    font-size: 12px;
-    padding: 10px 16px;
-  }
-  &.storybook-button--medium {
-    font-size: 14px;
-    padding: 11px 20px;
-  }
-  &.storybook-button--large {
-    font-size: 16px;
-    padding: 12px 24px;
-  }
+  border: 0;
+  padding: 10px 24px;
+  font-size: ${getRem(16)};
+  line-height: ${getRem(16)};
+  font-weight: ${(props) => props.theme.fonts.weight.semiBold};
+  border-radius: ${(props) => props.theme.sizes.borderRadius};
+  transition: all 0.2s ease-in-out;
+  text-align: center;
+  ${buttonStyle};
 `;
