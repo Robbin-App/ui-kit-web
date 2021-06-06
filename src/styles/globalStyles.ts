@@ -49,4 +49,13 @@ export const globalStyles = css`
   }
 `;
 
+export const container = css`
+  max-width: ${(props) => props.theme.sizes.containerMaxWidth}px;
+  padding: 0 24px;
+  margin: auto;
+  @media screen and (min-width: ${(props) =>
+      props.theme.sizes.containerMaxWidth + 48}px) {
+  }
+`;
+
 export const GlobalStyles = createGlobalStyle`${globalStyles}`;
