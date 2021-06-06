@@ -80,9 +80,8 @@ export const FormTextarea: React.FunctionComponent<
         onFocus={handleInputFocus}
         onKeyDown={handleKeyDown}
         rows={rows}
-      >
-        {value}
-      </textarea>
+        value={value}
+      />
     </StyledFormGroup>
   );
 };
