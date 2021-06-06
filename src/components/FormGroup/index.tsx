@@ -60,7 +60,7 @@ export const FormGroup: React.FunctionComponent<IFormGroupProps> = ({
 
 const FormGroupContainer = styled.div`
   position: relative;
-  margin-bottom: 12px;
+  margin-bottom: 22px;
   small {
     position: absolute;
     width: 100%;
