@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { FormGroup } from '../FormGroup';
+import { useTextInputMiniLabel } from '../../hooks/useTextInputMiniLabel';
 
 export interface IFormInputProps {
   /**
@@ -41,33 +42,24 @@ export const FormInput: React.FunctionComponent<
   onChange,
   disabled,
   className,
+  onFocus,
+  onBlur,
+  onKeyDown,
   ...props
 }) => {
-  const inputElement = useRef<HTMLInputElement | null>(null);
-  const [useMiniLabel, setUseMiniLabel] = useState<boolean>(false);
-  const [isFocus, setIsFocus] = useState<boolean>(false);
-
-  const handleInputFocus = (event: React.FocusEvent<HTMLInputElement>) => {
-    props.onFocus && props.onFocus(event);
-    setUseMiniLabel(true);
-    setIsFocus(true);
-  };
-  const handleInputBlur = (event: React.FocusEvent<HTMLInputElement>) => {
-    props.onBlur && props.onBlur(event);
-    if (String(value).length === 0) setUseMiniLabel(false);
-    setIsFocus(false);
-  };
-
-  const handleKeyDown = (event: React.KeyboardEvent<HTMLInputElement>) => {
-    props.onKeyDown && props.onKeyDown(event);
-    if (event.key.toLowerCase() === 'escape') {
-      inputElement.current?.blur();
-    }
-  };
-
-  useEffect(() => {
-    if (!isFocus) setUseMiniLabel(String(value).length > 0);
-  }, [value]);
+  const {
+    useMiniLabel,
+    handleInputFocus,
+    handleInputBlur,
+    handleKeyDown,
+    isFocus,
+    ref,
+  } = useTextInputMiniLabel<HTMLInputElement>({
+    onFocus,
+    onBlur,
+    onKeyDown,
+    value,
+  });
   return (
     <FormGroup
       label={label}
@@ -80,7 +72,7 @@ export const FormInput: React.FunctionComponent<
     >
       <input
         {...props}
-        ref={inputElement}
+        ref={ref}
         placeholder=""
         id={formId}
         disabled={disabled}
