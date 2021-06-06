@@ -8,6 +8,7 @@ export * from './components/SchoolSelector/index';
 export * from './components/GenericFormCard/index';
 export * from './components/Chip/index';
 export * from './components/HeaderLink/index';
+export * from './components/Logo/index';
 // Theme and style utils
 export * from './styles/index';
 // helpers

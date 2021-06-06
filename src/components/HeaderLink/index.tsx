@@ -10,7 +10,7 @@ export interface IHeaderLinkProps {
    */
   label: string;
   /**
-   * HeaderLink Icon
+   * HeaderLink Icon (@material-ui/icons)
    */
   icon: OverridableComponent<SvgIconTypeMap<Record<string, unknown>, 'svg'>>;
   /**
