@@ -8,7 +8,11 @@ export default {
   component: Button,
 } as Meta;
 
-const Template: Story<IButtonProps> = (args) => <Button {...args} />;
+const Template: Story<IButtonProps> = (args) => (
+  <div style={{ width: '220px' }}>
+    <Button {...args} />
+  </div>
+);
 
 export const Primary = Template.bind({});
 Primary.args = {
@@ -27,4 +31,12 @@ Outline.args = {
   color: 'primary',
   buttonStyle: 'outline',
   label: 'Continuar',
+};
+
+export const Loading = Template.bind({});
+Loading.args = {
+  color: 'primary',
+  buttonStyle: 'solid',
+  label: 'Continuar',
+  loading: true,
 };
