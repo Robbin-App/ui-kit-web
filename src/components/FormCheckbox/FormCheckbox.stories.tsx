@@ -1,6 +1,6 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import FormCheckbox, { IFormCheckboxProps } from './index';
+import { FormCheckbox, IFormCheckboxProps } from './index';
 
 export default {
   title: 'Components/Form Checkbox',

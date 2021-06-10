@@ -2,7 +2,7 @@ import { ThemeProvider } from 'styled-components';
 import React from 'react';
 import renderer from 'react-test-renderer';
 import { baseRobbinTheme } from '../../styles';
-import FormCheckbox from './index';
+import { FormCheckbox } from './index';
 
 const renderPropComponent = (theme, props = {}) => (
   <ThemeProvider theme={theme}>

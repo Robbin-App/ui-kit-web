@@ -28,7 +28,7 @@ export interface IFormCheckboxProps {
 /**
  * Basic Form Checkbox Component
  */
-const FormCheckbox: React.FunctionComponent<
+export const FormCheckbox: React.FunctionComponent<
   IFormCheckboxProps & React.InputHTMLAttributes<HTMLInputElement>
 > = ({ children, formId, label, ...props }) => {
   return (
@@ -77,5 +77,3 @@ const StyledLabel = styled.label`
     }
   }
 `;
-
-export default FormCheckbox;
