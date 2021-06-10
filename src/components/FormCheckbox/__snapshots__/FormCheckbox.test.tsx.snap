@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FormCheckbox renders 1`] = `
+<label
+  className="sc-bdnxRM kVSLGW"
+  htmlFor="test-id"
+>
+  test label
+  <input
+    id="test-id"
+    type="checkbox"
+  />
+  <span>
+    <svg
+      aria-hidden={true}
+      className="MuiSvgIcon-root"
+      focusable="false"
+      viewBox="0 0 24 24"
+    >
+      <path
+        d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+      />
+    </svg>
+  </span>
+</label>
+`;
