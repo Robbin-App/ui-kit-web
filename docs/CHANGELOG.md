@@ -1,3 +1,11 @@
+## [1.3.2](https://github.com/Robbin-App/ui-kit-web/compare/v1.3.1...v1.3.2) (2021-06-10)
+
+
+### Bug Fixes
+
+* 🐛 add mising media queries and fix globalStyles typo ([89c140f](https://github.com/Robbin-App/ui-kit-web/commit/89c140fe1320fe26828974b2498b8478c912e68c))
+* 🐛 Add missing FormCheckbox component ([44d83bc](https://github.com/Robbin-App/ui-kit-web/commit/44d83bca0e67f9dff8c09fedc52f2e211b4a247d))
+
 ## [1.3.1](https://github.com/Robbin-App/ui-kit-web/compare/v1.3.0...v1.3.1) (2021-06-10)
 
 
