@@ -39,7 +39,20 @@ export interface IBaseRobbinTheme {
     containerMaxWidth: number;
     borderRadius: string;
   };
+  mq: {
+    bigPhone: string;
+    tablet: string;
+    untilTablet: string;
+    desktop: string;
+    untilDesktop: string;
+  };
 }
+
+export const baseRobbinBreakpoints = {
+  bigPhone: 400,
+  tablet: 768,
+  desktop: 1024,
+};
 
 export const baseRobbinTheme: IBaseRobbinTheme = {
   colors: {
@@ -81,5 +94,12 @@ export const baseRobbinTheme: IBaseRobbinTheme = {
   sizes: {
     containerMaxWidth: 1230,
     borderRadius: '8px',
+  },
+  mq: {
+    bigPhone: `@media (min-width: ${baseRobbinBreakpoints.bigPhone}px)`,
+    untilTablet: `@media (max-width: ${baseRobbinBreakpoints.tablet - 1}px)`,
+    tablet: `@media (min-width: ${baseRobbinBreakpoints.tablet}px)`,
+    untilDesktop: `@media (max-width: ${baseRobbinBreakpoints.desktop - 1}px)`,
+    desktop: `@media (min-width: ${baseRobbinBreakpoints.desktop}px)`,
   },
 };

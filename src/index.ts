@@ -10,6 +10,7 @@ export * from './components/Chip/index';
 export * from './components/HeaderLink/index';
 export * from './components/Logo/index';
 export * from './components/HeaderLoggedUser/index';
+export * from './components/FormCheckbox/index';
 // Theme and style utils
 export * from './styles/index';
 // helpers
