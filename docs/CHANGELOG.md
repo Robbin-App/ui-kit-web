@@ -1,3 +1,10 @@
+## [1.3.3](https://github.com/Robbin-App/ui-kit-web/compare/v1.3.2...v1.3.3) (2021-06-10)
+
+
+### Bug Fixes
+
+* 🐛 Fix FormCheckbox export issue ([e4ca50e](https://github.com/Robbin-App/ui-kit-web/commit/e4ca50e13bea8c8d9d0aacc6e7c53bb646d390ee))
+
 ## [1.3.2](https://github.com/Robbin-App/ui-kit-web/compare/v1.3.1...v1.3.2) (2021-06-10)
 
 

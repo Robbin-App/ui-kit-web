@@ -1,6 +1,6 @@
 {
   "name": "@robbinapp/ui-kit-web",
-  "version": "1.3.2",
+  "version": "1.3.3",
   "main": "./build/index.js",
   "module": "./build/index.es.js",
   "description": "Robbin Ui Kit Web",
