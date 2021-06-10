@@ -1,3 +1,10 @@
+## [1.3.1](https://github.com/Robbin-App/ui-kit-web/compare/v1.3.0...v1.3.1) (2021-06-10)
+
+
+### Bug Fixes
+
+* 🐛 Fix FormInput date issues ([fc720f0](https://github.com/Robbin-App/ui-kit-web/commit/fc720f02d9d5d5909b1dbde91e6c2bb284cb2750))
+
 # [1.3.0](https://github.com/Robbin-App/ui-kit-web/compare/v1.2.0...v1.3.0) (2021-06-06)
 
 
