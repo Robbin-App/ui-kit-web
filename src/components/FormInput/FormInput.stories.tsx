@@ -7,7 +7,7 @@ export default {
   component: FormInput,
 } as Meta;
 
-const Template: Story<IFormInputProps> = (args) => {
+const Template: Story<IFormInputProps & { type?: string }> = (args) => {
   const [value, setValue] = useState<string>(`${args.value}`);
   return (
     <FormInput
@@ -30,6 +30,14 @@ Filled.args = {
   value: 'Jhon',
   label: 'First Name',
   formId: 'first-name-id-filled',
+};
+
+export const Date = Template.bind({});
+Date.args = {
+  value: '',
+  label: 'Date',
+  formId: 'date-id',
+  type: 'date',
 };
 
 export const Error = Template.bind({});

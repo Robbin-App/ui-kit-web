@@ -5,6 +5,7 @@ interface IUseTextInputMiniLabelArgs<T> {
   onBlur?: (event: React.FocusEvent<T>) => void;
   onKeyDown?: (event: React.KeyboardEvent<T>) => void;
   value?: number | string;
+  alwaysOn?: boolean;
 }
 
 interface IUseTextInputMiniLabelReturn<T> {
@@ -22,17 +23,23 @@ export const useTextInputMiniLabel = <
   args: IUseTextInputMiniLabelArgs<T>
 ): IUseTextInputMiniLabelReturn<T> => {
   const refElement = useRef<T | null>(null);
-  const [useMiniLabel, setUseMiniLabel] = useState<boolean>(false);
+  const [useMiniLabel, setUseMiniLabel] = useState<boolean>(
+    Boolean(args.alwaysOn)
+  );
   const [isFocus, setIsFocus] = useState<boolean>(false);
   const handleInputFocus = (event: React.FocusEvent<T>) => {
     args.onFocus && args.onFocus(event);
-    setUseMiniLabel(true);
     setIsFocus(true);
+    if (!args.alwaysOn) {
+      setUseMiniLabel(true);
+    }
   };
   const handleInputBlur = (event: React.FocusEvent<T>) => {
     args.onBlur && args.onBlur(event);
-    if (String(args.value).length === 0) setUseMiniLabel(false);
     setIsFocus(false);
+    if (!args.alwaysOn) {
+      if (String(args.value).length === 0) setUseMiniLabel(false);
+    }
   };
 
   const handleKeyDown = (event: React.KeyboardEvent<T>) => {
@@ -43,7 +50,9 @@ export const useTextInputMiniLabel = <
   };
 
   useEffect(() => {
-    if (!isFocus) setUseMiniLabel(String(args.value).length > 0);
+    if (!isFocus && !args.alwaysOn) {
+      setUseMiniLabel(String(args.value).length > 0);
+    }
   }, [args.value]);
 
   return {

@@ -59,6 +59,7 @@ export const FormInput: React.FunctionComponent<
     onBlur,
     onKeyDown,
     value,
+    alwaysOn: props.type === 'date',
   });
   return (
     <FormGroup
