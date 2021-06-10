@@ -5,14 +5,14 @@ export const globalStyles = css`
   ${normalize}
   * {
     box-sizing: border-box;
-    font-feature-settings: "lnum";
+    font-feature-settings: 'lnum';
     &:focus {
       outline: 1px solid ${(props) => props.theme.colors.secondary100};
     }
   }
   body {
-    font-family: 'Nunito', sans-serif;;
-    color: ${(props) => props.theme.colors.text.globalText}
+    font-family: 'Nunito', sans-serif;
+    color: ${(props) => props.theme.colors.text.globalText};
     background: ${(props) => props.theme.colors.greySurface};
     font-size: 16px;
   }
@@ -21,11 +21,11 @@ export const globalStyles = css`
     overflow-x: hidden;
     position: relative;
   }
-  
+
   html {
     scroll-behavior: smooth;
   }
-  
+
   input {
     -webkit-appearance: none;
   }
@@ -39,11 +39,16 @@ export const globalStyles = css`
   select:-webkit-autofill:focus {
     -webkit-box-shadow: 0 0 0px 1000px #ffffff inset !important;
   }
-  
-  h1, h2, h3, h4, h5,h6 {
-    color: ${(props) => props.theme.colors.text.headingText}
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: ${(props) => props.theme.colors.text.headingText};
   }
-  
+
   a {
     color: inherit;
   }
