@@ -34,7 +34,7 @@ exports[`FormSelect renders 1`] = `
     </select>
     <svg
       aria-hidden={true}
-      className="MuiSvgIcon-root sc-dlnjwi fCgiXY"
+      className="MuiSvgIcon-root sc-dlnjwi bmEaQg"
       focusable="false"
       viewBox="0 0 24 24"
     >

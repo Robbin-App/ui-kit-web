@@ -106,4 +106,5 @@ const StyledArrowIcon = styled(ArrowDropDownIcon)`
   top: 50%;
   transform: translateY(-50%);
   right: 14px;
+  pointer-events: none;
 `;
