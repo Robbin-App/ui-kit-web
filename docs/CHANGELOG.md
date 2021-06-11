@@ -1,3 +1,10 @@
+## [1.3.5](https://github.com/Robbin-App/ui-kit-web/compare/v1.3.4...v1.3.5) (2021-06-11)
+
+
+### Bug Fixes
+
+* 🐛 Fix FormInput date type height issue ([9a38396](https://github.com/Robbin-App/ui-kit-web/commit/9a383964140dfab68be3146a39e298e4af4f1480))
+
 ## [1.3.4](https://github.com/Robbin-App/ui-kit-web/compare/v1.3.3...v1.3.4) (2021-06-11)
 
 
