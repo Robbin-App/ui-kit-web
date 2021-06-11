@@ -5,7 +5,7 @@ exports[`FormTextarea renders 1`] = `
   className="sc-bdnxRM PrveY sc-dlnjwi cjGnbF"
 >
   <div
-    className="sc-gtsrHT txfIB form-field"
+    className="sc-gtsrHT gsBYLt form-field"
   >
     <label
       htmlFor="test-id"
