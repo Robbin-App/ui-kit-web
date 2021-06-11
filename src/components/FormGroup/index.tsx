@@ -128,6 +128,10 @@ const FormField = styled.div<{
       border-color: ${({ theme }) => theme.colors.text.disabledText};
     }
   }
+  input,
+  select {
+    min-height: 54px;
+  }
   select {
     -moz-appearance: none;
     -webkit-appearance: none;
