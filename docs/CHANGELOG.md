@@ -1,3 +1,11 @@
+## [1.3.4](https://github.com/Robbin-App/ui-kit-web/compare/v1.3.3...v1.3.4) (2021-06-11)
+
+
+### Bug Fixes
+
+* 🐛 GlobalStyles: remove background from body ([96262c8](https://github.com/Robbin-App/ui-kit-web/commit/96262c89737fff9ed4bda53eeae308983498659c))
+* 🐛 Remove FormSelect icon pointer-events ([b78a97f](https://github.com/Robbin-App/ui-kit-web/commit/b78a97f5031c92b04fca580d823d1deeaa9d44d4))
+
 ## [1.3.3](https://github.com/Robbin-App/ui-kit-web/compare/v1.3.2...v1.3.3) (2021-06-10)
 
 
