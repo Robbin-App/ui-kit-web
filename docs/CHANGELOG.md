@@ -1,3 +1,10 @@
+## [2.0.1](https://github.com/Robbin-App/ui-kit-web/compare/v2.0.0...v2.0.1) (2021-06-12)
+
+
+### Bug Fixes
+
+* 🐛 Header: fix overlapping issue ([a949cc5](https://github.com/Robbin-App/ui-kit-web/commit/a949cc540793834179fac2bbc364e51cc31b0912)), closes [#10](https://github.com/Robbin-App/ui-kit-web/issues/10)
+
 # [2.0.0](https://github.com/Robbin-App/ui-kit-web/compare/v1.3.5...v2.0.0) (2021-06-12)
 
 
