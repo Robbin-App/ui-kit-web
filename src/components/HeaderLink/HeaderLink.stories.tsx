@@ -17,12 +17,14 @@ const Template: Story<IHeaderLinkProps> = (args) => (
 export const Default = Template.bind({});
 Default.args = {
   label: 'Oportunidades',
-  icon: WorkOutlineOutlinedIcon,
+  // eslint-disable-next-line react/display-name
+  renderIcon: () => <WorkOutlineOutlinedIcon />,
 };
 
 export const Active = Template.bind({});
 Active.args = {
   label: 'Oportunidades',
-  icon: WorkOutlineOutlinedIcon,
+  // eslint-disable-next-line react/display-name
+  renderIcon: () => <WorkOutlineOutlinedIcon />,
   active: true,
 };

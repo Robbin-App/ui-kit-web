@@ -7,7 +7,10 @@ import { HeaderLink } from './index';
 
 const renderPropComponent = (theme) => (
   <ThemeProvider theme={theme}>
-    <HeaderLink label="test label" icon={WorkOutlineOutlinedIcon} />
+    <HeaderLink
+      label="test label"
+      renderIcon={() => <WorkOutlineOutlinedIcon />}
+    />
   </ThemeProvider>
 );
 
