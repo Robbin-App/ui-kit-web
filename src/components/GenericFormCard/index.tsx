@@ -23,6 +23,7 @@ export const GenericFormCard: React.FunctionComponent<IGenericFormCardProps> =
 const Container = styled.div`
   padding: 22px 22px 24px;
   border-radius: ${(props) => props.theme.sizes.borderRadius};
+  background-color: ${(props) => props.theme.colors.white};
   box-shadow: ${(props) => props.theme.shadows.global};
   h2 {
     margin: 0 0 18px;
