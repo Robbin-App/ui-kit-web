@@ -1,3 +1,28 @@
+# [2.0.0](https://github.com/Robbin-App/ui-kit-web/compare/v1.3.5...v2.0.0) (2021-06-12)
+
+
+### Bug Fixes
+
+* 🐛 Header: add missing export ([ca2d000](https://github.com/Robbin-App/ui-kit-web/commit/ca2d00037eb8ac137e243a9e53984ba5e657d85c))
+* 🐛 Header: fix storybook build issue ([f01cdad](https://github.com/Robbin-App/ui-kit-web/commit/f01cdad33044decc2f80d8ff253e7c3df1578461))
+
+
+### Code Refactoring
+
+* 💡 HeaderLink: replace icon with renderIcon function ([1bd1e5c](https://github.com/Robbin-App/ui-kit-web/commit/1bd1e5ceb9c17764a5aee1f26f6d8b9a9a386f39))
+* 💡 Logo: replace type with enum ([79ffdc4](https://github.com/Robbin-App/ui-kit-web/commit/79ffdc400ce7efc97950c6ac09916a98cad03019))
+
+
+### Features
+
+* 🎸 Header Component, Story and Tests ([4cc6249](https://github.com/Robbin-App/ui-kit-web/commit/4cc624959c2dc2e3949c3d9459dea00da2cfd414))
+
+
+### BREAKING CHANGES
+
+* 🧨 Remove icon prop and replace it with renderIcon function
+* 🧨 Add new LogoType enum
+
 ## [1.3.5](https://github.com/Robbin-App/ui-kit-web/compare/v1.3.4...v1.3.5) (2021-06-11)
 
 
