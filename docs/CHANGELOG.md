@@ -1,3 +1,10 @@
+## [2.0.2](https://github.com/Robbin-App/ui-kit-web/compare/v2.0.1...v2.0.2) (2021-06-12)
+
+
+### Bug Fixes
+
+* 🐛 GenericFormCard: Add missing background ([e8afd11](https://github.com/Robbin-App/ui-kit-web/commit/e8afd117a8e26a19a166fec006478772d4f3e5bf))
+
 ## [2.0.1](https://github.com/Robbin-App/ui-kit-web/compare/v2.0.0...v2.0.1) (2021-06-12)
 
 
