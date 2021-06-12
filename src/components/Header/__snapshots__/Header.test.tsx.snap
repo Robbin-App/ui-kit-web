@@ -2,7 +2,7 @@
 
 exports[`Header renders 1`] = `
 <header
-  className="sc-gtsrHT kAhoGx"
+  className="sc-gtsrHT dwTner"
 >
   <div
     className="sc-dlnjwi iGgBrV"
@@ -29,7 +29,7 @@ exports[`Header renders 1`] = `
       className="sc-hKFxyN hyibRh"
     >
       <nav
-        className="sc-eCApnc jFNQhW"
+        className="sc-eCApnc dCPnpP"
         open={false}
       >
         <a

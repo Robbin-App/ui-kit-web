@@ -105,8 +105,10 @@ export const Header: React.FunctionComponent<IHeaderProps> = ({
 };
 
 const StyledHeader = styled.header`
+  background-color: ${(props) => props.theme.colors.white};
   box-shadow: ${(props) => props.theme.shadows.global};
   position: fixed;
+  z-index: 5;
   top: 0;
   left: 0;
   width: 100%;
@@ -136,7 +138,6 @@ const StyledNav = styled.nav<{ open: boolean }>`
   left: 100%;
   height: calc(100vh - 60px);
   padding: 20px 24px;
-  background-color: ${(props) => props.theme.colors.white};
   border-top: 1px solid ${(props) => props.theme.colors.border.lightBorder};
   transition: all 0.4s ease-in-out;
   transform: translateX(${(props) => (props.open ? '-100%' : '0')});
