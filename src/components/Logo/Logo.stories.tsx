@@ -1,6 +1,6 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import { ILogoProps, Logo } from './index';
+import { ILogoProps, Logo, LogoType } from './index';
 
 export default {
   title: 'Components/Logo',
@@ -11,25 +11,25 @@ const Template: Story<ILogoProps> = (args) => <Logo {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
-  type: 'normal',
+  type: LogoType.Normal,
 };
 
 export const EmpresasBig = Template.bind({});
 EmpresasBig.args = {
-  type: 'empresas-big',
+  type: LogoType.EmpresasBig,
 };
 
 export const EmpresasNormal = Template.bind({});
 EmpresasNormal.args = {
-  type: 'empresas-normal',
+  type: LogoType.EmpresasNormal,
 };
 
 export const TalentosBig = Template.bind({});
 TalentosBig.args = {
-  type: 'talentos-big',
+  type: LogoType.TalentosBig,
 };
 
 export const TalentosNormal = Template.bind({});
 TalentosNormal.args = {
-  type: 'talentos-normal',
+  type: LogoType.TalentosNormal,
 };

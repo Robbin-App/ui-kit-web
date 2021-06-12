@@ -5,16 +5,19 @@ import LogoEmpresasBig from './LogoEmpresasBig';
 import LogoTalentosNormal from './LogoTalentosNormal';
 import LogoEmpresasNormal from './LogoEmpresasNormal';
 
+export enum LogoType {
+  Normal = 'normal',
+  TalentosBig = 'talentos-big',
+  EmpresasBig = 'empresas-big',
+  TalentosNormal = 'talentos-normal',
+  EmpresasNormal = 'empresas-normal',
+}
+
 export interface ILogoProps {
   /**
    * Logo Types
    */
-  type:
-    | 'normal'
-    | 'talentos-big'
-    | 'empresas-big'
-    | 'talentos-normal'
-    | 'empresas-normal';
+  type: LogoType;
 }
 
 /**
@@ -22,10 +25,10 @@ export interface ILogoProps {
  */
 export const Logo: React.FunctionComponent<ILogoProps> = ({ type }) => (
   <>
-    {type === 'normal' && <LogoNormal />}
-    {type === 'talentos-big' && <LogoTalentosBig />}
-    {type === 'empresas-big' && <LogoEmpresasBig />}
-    {type === 'talentos-normal' && <LogoTalentosNormal />}
-    {type === 'empresas-normal' && <LogoEmpresasNormal />}
+    {type === LogoType.Normal && <LogoNormal />}
+    {type === LogoType.TalentosBig && <LogoTalentosBig />}
+    {type === LogoType.EmpresasBig && <LogoEmpresasBig />}
+    {type === LogoType.TalentosNormal && <LogoTalentosNormal />}
+    {type === LogoType.EmpresasNormal && <LogoEmpresasNormal />}
   </>
 );

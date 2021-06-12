@@ -1,7 +1,5 @@
-import React from 'react';
+import React, { ReactElement } from 'react';
 import styled from 'styled-components';
-import { SvgIconTypeMap } from '@material-ui/core';
-import { OverridableComponent } from '@material-ui/core/OverridableComponent';
 import { getRem } from '../../helpers';
 
 export interface IHeaderLinkProps {
@@ -12,11 +10,15 @@ export interface IHeaderLinkProps {
   /**
    * HeaderLink Icon (@material-ui/icons)
    */
-  icon: OverridableComponent<SvgIconTypeMap<Record<string, unknown>, 'svg'>>;
+  renderIcon(): ReactElement | null;
   /**
    * HeaderLink active state
    */
   active?: boolean;
+  /**
+   * Classname of the Container
+   */
+  className?: string;
 }
 
 /**
@@ -25,10 +27,11 @@ export interface IHeaderLinkProps {
 export const HeaderLink: React.FunctionComponent<IHeaderLinkProps> = ({
   label,
   active,
-  icon: Icon,
+  className,
+  renderIcon = () => null,
 }) => (
-  <Container active={active}>
-    <Icon />
+  <Container active={active} className={className}>
+    {renderIcon()}
     <span>{label}</span>
   </Container>
 );
