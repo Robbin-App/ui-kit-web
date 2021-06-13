@@ -1,3 +1,16 @@
+# [3.0.0](https://github.com/Robbin-App/ui-kit-web/compare/v2.0.2...v3.0.0) (2021-06-13)
+
+
+### Features
+
+* 🎸 Remove material-ui ([3b236b0](https://github.com/Robbin-App/ui-kit-web/commit/3b236b080207b58cce43545bac7652e7516a77b0))
+* 🎸 Remove react-icons ([19a9705](https://github.com/Robbin-App/ui-kit-web/commit/19a9705e3e9274a6ccba8e82cb2386580ba2d941))
+
+
+### BREAKING CHANGES
+
+* 🧨 Remove material-ui (core & icons)
+
 ## [2.0.2](https://github.com/Robbin-App/ui-kit-web/compare/v2.0.1...v2.0.2) (2021-06-12)
 
 
