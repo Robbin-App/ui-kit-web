@@ -2,10 +2,10 @@
 
 exports[`Header renders 1`] = `
 <header
-  className="sc-gtsrHT dwTner"
+  className="sc-dlnjwi jCIruT"
 >
   <div
-    className="sc-dlnjwi iGgBrV"
+    className="sc-hKFxyN gMsUoZ"
   >
     <svg
       fill="none"
@@ -26,27 +26,31 @@ exports[`Header renders 1`] = `
       />
     </svg>
     <div
-      className="sc-hKFxyN hyibRh"
+      className="sc-eCApnc jLmYbV"
     >
       <nav
-        className="sc-eCApnc dCPnpP"
+        className="sc-jSFjdj cejqsC"
         open={false}
       >
         <a
           href="/"
         >
           <div
-            className="sc-bdnxRM dWkoyX"
+            className="sc-bdnxRM bgyVhi"
           >
             <svg
-              aria-hidden={true}
-              className="MuiSvgIcon-root"
-              focusable="false"
+              fill="#000000"
+              height="24px"
               viewBox="0 0 24 24"
+              width="24px"
+              xmlns="http://www.w3.org/2000/svg"
             >
               <path
+                d="M0 0h24v24H0V0z"
+                fill="none"
+              />
+              <path
                 d="M14 6V4h-4v2h4zM4 8v11h16V8H4zm16-2c1.11 0 2 .89 2 2v11c0 1.11-.89 2-2 2H4c-1.11 0-2-.89-2-2l.01-11c0-1.11.88-2 1.99-2h4V4c0-1.11.89-2 2-2h4c1.11 0 2 .89 2 2v2h4z"
-                fillRule="evenodd"
               />
             </svg>
             <span>
@@ -58,14 +62,19 @@ exports[`Header renders 1`] = `
           href="/applications"
         >
           <div
-            className="sc-bdnxRM gwnTur"
+            className="sc-bdnxRM kQgAvS"
           >
             <svg
-              aria-hidden={true}
-              className="MuiSvgIcon-root"
-              focusable="false"
+              fill="#000000"
+              height="24px"
               viewBox="0 0 24 24"
+              width="24px"
+              xmlns="http://www.w3.org/2000/svg"
             >
+              <path
+                d="M0 0h24v24H0V0z"
+                fill="none"
+              />
               <path
                 d="M8 16h8v2H8zm0-4h8v2H8zm6-10H6c-1.1 0-2 .9-2 2v16c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm4 18H6V4h7v5h5v11z"
               />
@@ -79,14 +88,19 @@ exports[`Header renders 1`] = `
           href="/notifications"
         >
           <div
-            className="sc-bdnxRM gwnTur"
+            className="sc-bdnxRM kQgAvS"
           >
             <svg
-              aria-hidden={true}
-              className="MuiSvgIcon-root"
-              focusable="false"
+              fill="#000000"
+              height="24px"
               viewBox="0 0 24 24"
+              width="24px"
+              xmlns="http://www.w3.org/2000/svg"
             >
+              <path
+                d="M0 0h24v24H0V0z"
+                fill="none"
+              />
               <path
                 d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6v-5c0-3.07-1.63-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.64 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2zm-2 1H8v-6c0-2.48 1.51-4.5 4-4.5s4 2.02 4 4.5v6z"
               />
@@ -100,16 +114,21 @@ exports[`Header renders 1`] = `
           href="/edit-profile"
         >
           <div
-            className="sc-bdnxRM gwnTur"
+            className="sc-bdnxRM kQgAvS"
           >
             <svg
-              aria-hidden={true}
-              className="MuiSvgIcon-root"
-              focusable="false"
+              fill="#000000"
+              height="24px"
               viewBox="0 0 24 24"
+              width="24px"
+              xmlns="http://www.w3.org/2000/svg"
             >
               <path
-                d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6v-5c0-3.07-1.63-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.64 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2zm-2 1H8v-6c0-2.48 1.51-4.5 4-4.5s4 2.02 4 4.5v6z"
+                d="M0 0h24v24H0V0z"
+                fill="none"
+              />
+              <path
+                d="M12 5.9c1.16 0 2.1.94 2.1 2.1s-.94 2.1-2.1 2.1S9.9 9.16 9.9 8s.94-2.1 2.1-2.1m0 9c2.97 0 6.1 1.46 6.1 2.1v1.1H5.9V17c0-.64 3.13-2.1 6.1-2.1M12 4C9.79 4 8 5.79 8 8s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm0 9c-2.67 0-8 1.34-8 4v3h16v-3c0-2.66-5.33-4-8-4z"
               />
             </svg>
             <span>
@@ -120,31 +139,38 @@ exports[`Header renders 1`] = `
       </nav>
     </div>
     <div
-      className="sc-jSFjdj CpWou"
+      className="sc-gKAaRy fvksiq"
     >
       <a
         href="#"
       >
         <div
-          className="MuiAvatar-root MuiAvatar-circle MuiAvatar-colorDefault"
+          className="sc-gtsrHT gOBFpZ"
         >
-          JD
+          <span>
+            JD
+          </span>
         </div>
       </a>
     </div>
     <button
       aria-hidden={false}
       aria-label="abrir menu"
-      className="sc-gKAaRy ekpQdd"
+      className="sc-iCoGMd dkVpsj"
       onClick={[Function]}
       tabIndex={-1}
     >
       <svg
-        aria-hidden={true}
-        className="MuiSvgIcon-root"
-        focusable="false"
+        fill="#000000"
+        height="24px"
         viewBox="0 0 24 24"
+        width="24px"
+        xmlns="http://www.w3.org/2000/svg"
       >
+        <path
+          d="M0 0h24v24H0V0z"
+          fill="none"
+        />
         <path
           d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"
         />

@@ -8,7 +8,7 @@ export interface IHeaderLinkProps {
    */
   label: string;
   /**
-   * HeaderLink Icon (@material-ui/icons)
+   * HeaderLink Icon (react-icons)
    */
   renderIcon(): ReactElement | null;
   /**
@@ -46,6 +46,10 @@ const Container = styled.div<{ active?: boolean }>`
   svg {
     transition: all 0.2s ease-in-out;
     color: ${(props) =>
+      props.active
+        ? props.theme.colors.primary100
+        : props.theme.colors.text.globalText};
+    fill: ${(props) =>
       props.active
         ? props.theme.colors.primary100
         : props.theme.colors.text.globalText};

@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Check from '@material-ui/icons/Check';
+import { MdCheck } from 'react-icons/md';
 
 export interface IFormCheckboxProps {
   /**
@@ -36,7 +36,7 @@ export const FormCheckbox: React.FunctionComponent<
       {children || label}
       <input {...props} type="checkbox" id={formId} />
       <span>
-        <Check />
+        <MdCheck />
       </span>
     </StyledLabel>
   );

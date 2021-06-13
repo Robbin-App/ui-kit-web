@@ -1,9 +1,10 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import WorkOutlineIcon from '@material-ui/icons/WorkOutline';
-import DescriptionOutlinedIcon from '@material-ui/icons/DescriptionOutlined';
-import NotificationsNoneOutlinedIcon from '@material-ui/icons/NotificationsNoneOutlined';
 import { LogoType } from '../Logo';
+import { WorkOutlinedIcon } from '../../icons/WorkOutlinedIcon';
+import { DescriptionOutlinedIcon } from '../../icons/DescriptionOutlinedIcon';
+import { NotificationsNoneOutlinedIcon } from '../../icons/NotificationsNoneOutlinedIcon';
+import { PersonOutlinedIcon } from '../../icons/PersonOutlinedIcon';
 import { IHeaderProps, Header } from './index';
 
 export default {
@@ -21,7 +22,7 @@ Default.args = {
       label: 'Oportunidades',
       href: '/',
       // eslint-disable-next-line react/display-name
-      renderIcon: () => <WorkOutlineIcon />,
+      renderIcon: () => <WorkOutlinedIcon />,
     },
     {
       label: 'Aplicaciones',
@@ -39,7 +40,7 @@ Default.args = {
       label: 'Editar Perfil',
       href: '/edit-profile',
       // eslint-disable-next-line react/display-name
-      renderIcon: () => <NotificationsNoneOutlinedIcon />,
+      renderIcon: () => <PersonOutlinedIcon />,
     },
   ],
   pathname: '/',

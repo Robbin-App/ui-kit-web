@@ -2,16 +2,15 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import { ThemeProvider } from 'styled-components';
 import { baseRobbinTheme } from '../../styles';
-import { WorkOutlinedIcon } from '../../icons';
-import { HeaderLink } from './index';
+import { GenericAvatar } from './index';
 
 const renderPropComponent = (theme) => (
   <ThemeProvider theme={theme}>
-    <HeaderLink label="test label" renderIcon={() => <WorkOutlinedIcon />} />
+    <GenericAvatar>JD</GenericAvatar>
   </ThemeProvider>
 );
 
-describe('HeaderLink', () => {
+describe('GenericAvatar', () => {
   test('renders', () => {
     const render = renderer
       .create(renderPropComponent(baseRobbinTheme))

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import WorkOutlineOutlinedIcon from '@material-ui/icons/WorkOutlineOutlined';
+import { MdWork } from 'react-icons/md';
 import { HeaderLink, IHeaderLinkProps } from './index';
 
 export default {
@@ -18,13 +18,13 @@ export const Default = Template.bind({});
 Default.args = {
   label: 'Oportunidades',
   // eslint-disable-next-line react/display-name
-  renderIcon: () => <WorkOutlineOutlinedIcon />,
+  renderIcon: () => <MdWork />,
 };
 
 export const Active = Template.bind({});
 Active.args = {
   label: 'Oportunidades',
   // eslint-disable-next-line react/display-name
-  renderIcon: () => <WorkOutlineOutlinedIcon />,
+  renderIcon: () => <MdWork />,
   active: true,
 };

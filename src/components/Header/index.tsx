@@ -1,11 +1,11 @@
 import React, { ReactElement, useState } from 'react';
 import styled from 'styled-components';
-import MenuIcon from '@material-ui/icons/Menu';
-import CloseIcon from '@material-ui/icons/Close';
-import Avatar from '@material-ui/core/Avatar';
 import { Logo, LogoType } from '../Logo';
 import { container } from '../../styles';
 import { HeaderLink } from '../HeaderLink';
+import { MenuIcon } from '../../icons/MenuIcon';
+import { CloseIcon } from '../../icons/Close';
+import { GenericAvatar } from '../GenericAvatar';
 
 export interface INavItems {
   href: string;
@@ -84,11 +84,11 @@ export const Header: React.FunctionComponent<IHeaderProps> = ({
         </NavContainer>
         <DesktopAvatar>
           {avatarLinkWrapper(
-            <Avatar>
+            <GenericAvatar>
               {userFirstName &&
                 userLastName &&
                 `${userFirstName.charAt(0)}${userLastName.charAt(0)}`}
-            </Avatar>
+            </GenericAvatar>
           )}
         </DesktopAvatar>
         <MobileMenuTrigger
@@ -180,7 +180,7 @@ const MobileMenuTrigger = styled.button`
     display: none;
   }
   svg {
-    color: ${(props) => props.theme.colors.text.globalText};
+    fill: ${(props) => props.theme.colors.text.globalText};
   }
 `;
 
