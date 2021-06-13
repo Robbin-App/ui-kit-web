@@ -8,7 +8,7 @@ export interface IHeaderLinkProps {
    */
   label: string;
   /**
-   * HeaderLink Icon (react-icons)
+   * HeaderLink Icon
    */
   renderIcon(): ReactElement | null;
   /**
