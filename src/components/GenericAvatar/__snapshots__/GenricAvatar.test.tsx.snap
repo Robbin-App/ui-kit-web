@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GenericAvatar renders 1`] = `
+<div
+  className="sc-bdnxRM KLCnk"
+>
+  <span>
+    JD
+  </span>
+</div>
+`;

@@ -12,7 +12,10 @@ export * from './components/Logo/index';
 export * from './components/HeaderLoggedUser/index';
 export * from './components/FormCheckbox/index';
 export * from './components/Header/index';
+export * from './components/GenericAvatar/index';
 // Theme and style utils
 export * from './styles/index';
 // helpers
 export * from './helpers/index';
+//icons
+export * from './icons/index';

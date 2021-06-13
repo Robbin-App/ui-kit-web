@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react';
-import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
 import styled from 'styled-components';
 import { FormGroup } from '../FormGroup';
+import { ArrowDropDown } from '../../icons/ArrowDropDown';
 
 export interface IFormSelectProps {
   /**
@@ -100,8 +100,8 @@ export const FormSelect: React.FunctionComponent<
   );
 };
 
-const StyledArrowIcon = styled(ArrowDropDownIcon)`
-  color: ${(props) => props.theme.colors.text.globalText};
+const StyledArrowIcon = styled(ArrowDropDown)`
+  fill: ${(props) => props.theme.colors.text.globalText};
   position: absolute;
   top: 50%;
   transform: translateY(-50%);

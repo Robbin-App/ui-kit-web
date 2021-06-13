@@ -1,9 +1,10 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import { ThemeProvider } from 'styled-components';
-import WorkOutlineIcon from '@material-ui/icons/WorkOutline';
-import DescriptionOutlinedIcon from '@material-ui/icons/DescriptionOutlined';
-import NotificationsNoneOutlinedIcon from '@material-ui/icons/NotificationsNoneOutlined';
+import { WorkOutlinedIcon } from '../../icons/WorkOutlinedIcon';
+import { DescriptionOutlinedIcon } from '../../icons/DescriptionOutlinedIcon';
+import { NotificationsNoneOutlinedIcon } from '../../icons/NotificationsNoneOutlinedIcon';
+import { PersonOutlinedIcon } from '../../icons/PersonOutlinedIcon';
 import { LogoType } from '../Logo';
 import { baseRobbinTheme } from '../../styles';
 import { Header } from './index';
@@ -15,7 +16,7 @@ export const defaultProps = {
       label: 'Oportunidades',
       href: '/',
       // eslint-disable-next-line react/display-name
-      renderIcon: () => <WorkOutlineIcon />,
+      renderIcon: () => <WorkOutlinedIcon />,
     },
     {
       label: 'Aplicaciones',
@@ -33,7 +34,7 @@ export const defaultProps = {
       label: 'Editar Perfil',
       href: '/edit-profile',
       // eslint-disable-next-line react/display-name
-      renderIcon: () => <NotificationsNoneOutlinedIcon />,
+      renderIcon: () => <PersonOutlinedIcon />,
     },
   ],
   pathname: '/',

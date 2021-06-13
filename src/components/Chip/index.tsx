@@ -1,7 +1,7 @@
 import React from 'react';
-import ClearIcon from '@material-ui/icons/Clear';
 import styled from 'styled-components';
 import { getRem } from '../../helpers';
+import { ClearIcon } from '../../icons/Clear';
 
 export interface IChipsProps {
   /**

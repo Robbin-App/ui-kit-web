@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Check from '@material-ui/icons/Check';
+import { CheckIcon } from '../../icons/Check';
 
 export interface IFormCheckboxProps {
   /**
@@ -36,7 +36,7 @@ export const FormCheckbox: React.FunctionComponent<
       {children || label}
       <input {...props} type="checkbox" id={formId} />
       <span>
-        <Check />
+        <CheckIcon />
       </span>
     </StyledLabel>
   );
@@ -73,7 +73,7 @@ const StyledLabel = styled.label`
     border: 1px solid ${(props) => props.theme.colors.border.darkBorder};
     svg {
       display: none;
-      color: ${(props) => props.theme.colors.white};
+      fill: ${(props) => props.theme.colors.white};
     }
   }
 `;

@@ -33,13 +33,19 @@ exports[`FormSelect renders 1`] = `
       </option>
     </select>
     <svg
-      aria-hidden={true}
-      className="MuiSvgIcon-root sc-dlnjwi bmEaQg"
-      focusable="false"
+      className="sc-dlnjwi bWaqfy"
+      fill="#000000"
+      height="24px"
       viewBox="0 0 24 24"
+      width="24px"
+      xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        d="M7 10l5 5 5-5z"
+        d="M0 0h24v24H0V0z"
+        fill="none"
+      />
+      <path
+        d="M7 10l5 5 5-5H7z"
       />
     </svg>
   </div>
