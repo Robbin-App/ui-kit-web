@@ -1,3 +1,10 @@
+# [3.1.0](https://github.com/Robbin-App/ui-kit-web/compare/v3.0.0...v3.1.0) (2021-06-14)
+
+
+### Features
+
+* 🎸 Select Component, Story and Tests ([7782d62](https://github.com/Robbin-App/ui-kit-web/commit/7782d626994047be666b14524912b70257ca251f))
+
 # [3.0.0](https://github.com/Robbin-App/ui-kit-web/compare/v2.0.2...v3.0.0) (2021-06-13)
 
 
