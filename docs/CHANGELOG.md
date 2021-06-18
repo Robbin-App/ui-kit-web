@@ -1,3 +1,10 @@
+## [3.1.1](https://github.com/Robbin-App/ui-kit-web/compare/v3.1.0...v3.1.1) (2021-06-18)
+
+
+### Bug Fixes
+
+* 🐛 Add missing Select export ([89fdc56](https://github.com/Robbin-App/ui-kit-web/commit/89fdc5625616f63f40a2ad3d8117a7a6d164d6f9))
+
 # [3.1.0](https://github.com/Robbin-App/ui-kit-web/compare/v3.0.0...v3.1.0) (2021-06-14)
 
 
