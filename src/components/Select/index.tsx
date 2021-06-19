@@ -116,10 +116,6 @@ const Container = styled.div<{ error?: string | boolean }>`
     transform: none;
     font-size: ${getRem(16)};
     line-height: ${getRem(20)};
-    & + div {
-      padding: 0;
-      margin: 0;
-    }
   }
 
   .select__single-value {
@@ -129,10 +125,11 @@ const Container = styled.div<{ error?: string | boolean }>`
     transform: none;
     font-size: ${getRem(16)};
     line-height: ${getRem(20)};
-    & + div {
-      padding: 0;
-      margin: 0;
-    }
+  }
+
+  [class$='-Input'] {
+    padding: 0;
+    margin: 0;
   }
 
   .select__dropdown-indicator {
