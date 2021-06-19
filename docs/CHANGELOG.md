@@ -1,3 +1,10 @@
+## [3.1.2](https://github.com/Robbin-App/ui-kit-web/compare/v3.1.1...v3.1.2) (2021-06-19)
+
+
+### Bug Fixes
+
+* 🐛 fix select styling when typing ([410c779](https://github.com/Robbin-App/ui-kit-web/commit/410c779720342deac864d90c6057a752e0a65022))
+
 ## [3.1.1](https://github.com/Robbin-App/ui-kit-web/compare/v3.1.0...v3.1.1) (2021-06-18)
 
 
