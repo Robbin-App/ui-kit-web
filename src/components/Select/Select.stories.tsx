@@ -1,5 +1,6 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
+import FormInput from '../FormInput';
 import { ISelectProps, Select } from './index';
 
 export default {
@@ -8,8 +9,9 @@ export default {
 } as Meta;
 
 const Template: Story<ISelectProps> = (args) => (
-  <div style={{ height: '200px' }}>
+  <div style={{ height: '200px', display: 'flex' }}>
     <Select {...args} />
+    <FormInput label="test" formId="test" />
   </div>
 );
 
