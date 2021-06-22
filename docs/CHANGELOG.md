@@ -1,3 +1,10 @@
+# [3.2.0](https://github.com/Robbin-App/ui-kit-web/compare/v3.1.2...v3.2.0) (2021-06-22)
+
+
+### Features
+
+* 🎸 DottedButton Component, Story and Tests ([6c4e224](https://github.com/Robbin-App/ui-kit-web/commit/6c4e2249c13fffd42e5f08b64f3b558988841842))
+
 ## [3.1.2](https://github.com/Robbin-App/ui-kit-web/compare/v3.1.1...v3.1.2) (2021-06-19)
 
 
