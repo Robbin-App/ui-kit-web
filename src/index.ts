@@ -14,6 +14,7 @@ export * from './components/FormCheckbox/index';
 export * from './components/Header/index';
 export * from './components/GenericAvatar/index';
 export * from './components/Select/index';
+export * from './components/DottedButton/index';
 // Theme and style utils
 export * from './styles/index';
 // helpers
