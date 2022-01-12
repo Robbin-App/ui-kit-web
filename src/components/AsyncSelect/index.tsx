@@ -1,14 +1,18 @@
 import React from 'react';
-import ReactSelect, { Props } from 'react-select';
+import ReactSelect, { Props } from 'react-select/async';
 import {
   BaseSelectContainer,
   IBaseSelectContainerProps,
 } from '../BaseSelectContainer';
 import useSelectTheme from '../../hooks/useSelectTheme';
 
-export type ISelectProps = Props & IBaseSelectContainerProps;
+export type ISelectAsyncProps = Props<any, any, any> &
+  IBaseSelectContainerProps;
 
-export const Select: React.FunctionComponent<ISelectProps> = ({
+/**
+ * Basic react-select async component
+ */
+export const AsyncSelect: React.FunctionComponent<ISelectAsyncProps> = ({
   label,
   formId,
   error,

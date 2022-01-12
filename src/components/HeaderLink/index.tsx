@@ -55,10 +55,12 @@ const Container = styled.div<{ active?: boolean }>`
         : props.theme.colors.text.globalText};
   }
   &:hover {
-    border-bottom-color: ${(props) =>
-      props.active
-        ? props.theme.colors.primary100
-        : props.theme.colors.text.globalText};
+    span {
+      color: ${(props) => props.theme.colors.primary100};
+    }
+    svg {
+      fill: ${(props) => props.theme.colors.primary100};
+    }
   }
   span {
     display: block;
